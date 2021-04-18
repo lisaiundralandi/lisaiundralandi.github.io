@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="kalkulator">
+    <label for="wynik"></label>
+    <input id="wynik" disabled value="0">
+    <br>
+
+    <div onclick="wyczysc()" class="przycisk przyscisk-specjalny">C</div>
+    <div onclick="zmienZnak()" class="przycisk przyscisk-specjalny">+/-</div>
+    <div onclick="procent()" class="przycisk przyscisk-specjalny">%</div>
+    <div onclick="operacja('/')" class="przycisk operacja">/</div>
+<br>
+
+
+    <div onclick="wpisz(7)" class="przycisk">7</div>
+    <div onclick="wpisz(8)" class="przycisk">8</div>
+    <div onclick="wpisz(9)" class="przycisk">9</div>
+    <div onclick="operacja('*')" class="przycisk operacja">x</div>
+
+    <br>
+
+    <div onclick="wpisz(4)" class="przycisk">4</div>
+    <div onclick="wpisz(5)" class="przycisk">5</div>
+    <div onclick="wpisz(6)" class="przycisk">6</div>
+    <div onclick="operacja('-')" class="przycisk operacja">-</div>
+    <br>
+
+    <div onclick="wpisz(1)" class="przycisk">1</div>
+    <div onclick="wpisz(2)" class="przycisk">2</div>
+    <div onclick="wpisz(3)" class="przycisk">3</div>
+    <div onclick="operacja('+')" class="przycisk operacja">+</div>
+    <br>
+
+    <div onclick="wpisz(0)" class="przycisk dlugi-przycisk">0</div>
+    <div onclick="dodajKropke()" class="przycisk">,</div>
+    <div onclick="rownaSie()" class="przycisk operacja">=</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
